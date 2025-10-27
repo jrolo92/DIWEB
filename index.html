@@ -53,7 +53,9 @@
             color: #005fa3;
         }
 
-        /* Responsive */
+
+
+        /* Responsive  */
         @media (max-width: 600px) {
             body {
                 padding: 20px;
@@ -67,11 +69,22 @@
                 font-size: 1rem;
             }
         }
+
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* ocupa toda la altura de la pantalla */
+            text-align: center;
+        }
     </style>
 
 </head>
 
 <body>
+    <div class="contenedor"></div>
     <h1>Todo sobre el diseño web</h1>
     <p>Aquí podeis consultar los ejercicios de Diseño Web</p>
     <ul>
@@ -91,6 +104,7 @@
         <li><a href="tema1/ejercicio16/index.html">Ejercicio 16</a></li>
         <li><a href="tema1/CMS">Sistemas de Gestión de Contenido (CMS)</a></li>
     </ul>
+    </div>
 
 </body>
 
