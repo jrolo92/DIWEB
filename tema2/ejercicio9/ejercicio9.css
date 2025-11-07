@@ -1,0 +1,29 @@
+/* Combinador descendiente (espacio) */
+.container p {
+    color:blue;
+}
+
+/* Combinador hijos directos (>) */
+.container > h2 {
+    color:red;
+}
+
+/* Combinador hermanos adyacentes (+) */
+h2+p{
+    color:green;
+}
+
+/* Combinador todos los hermanos a partir de (~) */
+.intro ~ p{
+    background-color: yellow;
+}
+
+/* Combinador múltiple (,) */
+h2, .intro {
+    margin-bottom: 10px;
+}
+
+/* Combinador dependiente (Seguido sin espacios) */
+p.intro {
+    background-color: grey;
+}

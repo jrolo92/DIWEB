@@ -1,0 +1,25 @@
+/* Selector de ID */
+#subtitulo {
+    color:purple
+}
+
+/* Selector de Clase */
+.resaltado {
+    background-color: grey;
+}
+
+/* Selector de Elemento */
+li {
+    color: red;
+}
+
+/* Selector de atributo */
+[type="password"]{
+    border: 2px solid blue;
+}
+
+/* Selector universal */
+* {
+    margin: 0;
+    padding: 0;
+}

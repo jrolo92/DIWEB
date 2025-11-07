@@ -1,0 +1,13 @@
+/* Selectores de clase */
+.par {
+    color:red;
+}
+
+.impar {
+    color:green;
+}
+
+/* Selector de ID */
+#primero {
+    color : blue;
+}
