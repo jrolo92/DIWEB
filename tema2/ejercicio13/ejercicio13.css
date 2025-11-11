@@ -1,0 +1,22 @@
+.container {
+    font-family: "Montserrat";
+    color: grey;
+}
+
+/* Selector descendente ( ) */
+section p {
+    font-family: "Courier New" !important;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#override {
+    color:black;
+}
+
+.title {
+    font-size: 50px;
+}
