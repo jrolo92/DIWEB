@@ -34,6 +34,33 @@
             color: #555;
         }
 
+        /* Menú de navegación*/
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav li {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0077cc;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #005fa3;
+        }
+
         /* Lista de enlaces */
         ul {
             list-style: none;
@@ -75,11 +102,24 @@
 </head>
 
 <body>
+
+
+
     <div class="contenedor">
-        <h1>Todo sobre el diseño web</h1>
-        <p>Aquí podéis consultar los ejercicios de Diseño Web</p>
+        <header>
+            <h1>Todo sobre el diseño web</h1>
+            <p>Aquí podéis consultar los ejercicios de Diseño Web</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#tema1">Unidad 1</a></li>
+                <li><a href="#tema2">Unidad 2</a></li>
+            </ul>
+        </nav>
+
         <ul>
-            <h3>Tema 1:</h3>
+            <h3 id="tema1">Unidad 1:</h3>
             <li><a href="tema1/ejercicio1.png">Principales Hitos Históricos de la Web</a></li>
             <li><a href="tema1/ejercicio2">Diseño Web en la Actualidad</a></li>
             <li><a href="tema1/ejercicio3">Diferencias UI – UX</a></li>
@@ -99,7 +139,7 @@
         </ul>
 
         <ul>
-            <h3>Tema 2:</h3>
+            <h3 id="tema2">Unidad 2:</h3>
             <li><a href="tema2/ejercicio2/ejercicio2-css-externo.html">Ejercicio 2 - CSS Externo</a></li>
             <li><a href="tema2/ejercicio2/ejercicio2-css-interno.html">Ejercicio 2 - CSS Interno</a></li>
             <li><a href="tema2/ejercicio2/ejercicio2-css-en-linea.html">Ejercicio 2 - CSS en Línea</a></li>
@@ -112,6 +152,8 @@
             <li><a href="tema2/ejercicio8/ejercicio8.html">Ejercicio 8</a></li>
             <li><a href="tema2/ejercicio9/ejercicio9.html">Ejercicio 9 - Tipos de combinadores de Selectores</a></li>
             <li><a href="tema2/ejercicio10.html">Ejercicio 10</a></li>
+            <li><a href="tema2/ejercicio11/ejercicio11.html">Ejercicio 11 - Especificidad</a></li>
+
 
 
         </ul>

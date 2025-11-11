@@ -1,0 +1,19 @@
+h1 {
+    color:purple;
+}
+
+.titulo {
+    color:green;
+}
+
+#parrafo {
+    color:aquamarine;
+}
+
+.texto {
+    color:blue !important;
+}
+
+p {
+    color:red;
+}
