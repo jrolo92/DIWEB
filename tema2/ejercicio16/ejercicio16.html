@@ -1,91 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 16</title>
-    <style>
-        body {
-            font-family: Montserrat, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Efecto background-attachment</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
 
-        .box {
-            height: 250px;
-            margin-bottom: 30px;
-            border: 1px solid #333;
-            padding: 20px;
-            color: black;
-            font-size: 1.5em;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+    section {
+      min-height: 100vh;
+      padding: 40px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-        .contenido1 {
-            background-image: url('images/saltoCabrero.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            color: white;
-            background-attachment: scroll;
-            opacity: 0.8;
-        }
+    .scroll {
+      background-image: url('images/saltoCabrero.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll; /* por defecto */
+    }
 
-        .contenido2 {
-            background-image: url('images/saltoCabrero.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 50% 100%;
-            color: white;
-            background-attachment: fixed;
-            opacity: 0.8;
-        }
+    .fixed {
+      background-image: url('images/saltoCabrero.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* efecto parallax */
+    }
 
-        .contenido3 {
-            background-image: url('images/saltoCabrero.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 50% 100%;
-            color: white;
-            background-attachment: local;
-            opacity: 0.8;
-        }
-    </style>
+    .local {
+      background-image: url('images/saltoCabrero.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: local; /* se mueve con el contenido interno */
+      overflow: auto; /* necesario para ver el efecto local */
+    }
+
+    .texto {
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 40px;
+    }
+  </style>
 </head>
-
 <body>
-    <div class="box contenido1">
-        <h2>El Salto del Cabrero</h2>
-        <p>
-            Una espectacular falla geológica situada entre Grazalema y Benaocaz.
-            El sendero ofrece vistas impresionantes de la Sierra y es hábitat de cabras montesas.
-            Ruta sencilla de unas 2-3 horas, ideal para disfrutar en familia.
-        </p>
-    </div>
+  <section class="scroll">
+    <h2>Sección con background-attachment: scroll</h2>
+    <p>
+      Este texto permite hacer scroll en la página. La imagen de fondo se mueve junto con el contenido.
+      Añadimos más texto para que la página sea desplazable y se note el efecto.
+    </p>
+  </section>
 
-    <div class="box contenido2">
-        <h2>El Salto del Cabrero</h2>
-        <p>
-            Una espectacular falla geológica situada entre Grazalema y Benaocaz.
-            El sendero ofrece vistas impresionantes de la Sierra y es hábitat de cabras montesas.
-            Ruta sencilla de unas 2-3 horas, ideal para disfrutar en familia.
-        </p>
-    </div>
+  <section class="fixed">
+    <h2>Sección con background-attachment: fixed</h2>
+    <p>
+      Aquí la imagen de fondo permanece fija respecto al viewport, creando un efecto tipo parallax
+      mientras el texto se desplaza.
+    </p>
+  </section>
 
-    <div class="box contenido3">
-        <h2>El Salto del Cabrero</h2>
-        <p>
-            Una espectacular falla geológica situada entre Grazalema y Benaocaz.
-            El sendero ofrece vistas impresionantes de la Sierra y es hábitat de cabras montesas.
-            Ruta sencilla de unas 2-3 horas, ideal para disfrutar en familia.
-        </p>
-    </div>
-</body>
-
-</html>
+  <section class="local">
+    <h2>Sección con background-attachment: local

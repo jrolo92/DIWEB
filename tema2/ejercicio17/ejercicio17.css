@@ -1,0 +1,38 @@
+/* Estilo general del cuerpo */
+body {
+    color: #333333;
+    text-align:justify;
+}
+
+/* 1. Estilo para el título principal (h1) */
+h1 {
+    color: #007acc;
+    font-size: 32px;
+    text-align:center;
+    text-transform:uppercase;
+    text-decoration:underline;
+}
+
+/* 2. Estilo para el subtítulo (h2) */
+h2 {
+    color: #007acc;
+    font-size: 24px;
+    text-align:justify;
+    text-transform:capitalize;
+    letter-spacing:1px;
+}
+
+/* 3. Estilo para el párrafo (p) */
+p {
+    text-transform:none;
+    text-indent:30px;
+}
+
+/* 4. Estilo para el bloque de cita (blockquote) */
+blockquote {
+    text-transform:none;
+    font-style:italic;
+    background-color:#f0f8ff;
+    padding:10px;
+    border-left:3px solid #007acc;
+}
