@@ -1,5 +1,6 @@
 ol.tareas{
-    list-style-type:decimal-leading-zero;
+    
+    list-style-type:decimal-leading-zero;   
     list-style-position:inside;
     color:#003366;
 }

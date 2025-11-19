@@ -1,0 +1,25 @@
+.section1{
+    border-style:dotted;
+    border-width: 3px;
+    border-color: blue;
+    /*Se podría poner todo en la misma línea -> border: 3px dotted blue; */
+    margin:20px;
+    padding: 10px;
+}
+
+.section2{
+    border-style:solid;
+    border-top-width: 5px;
+    border-right-width: 10px;
+    border-bottom-width: 15px;
+    border-left-width: 20px;
+    border-color: green;
+}
+
+.section3 button{
+    border: 4px;
+    border-style: double;
+    border-color: red;
+    margin:10px;
+    border-radius: 15px;
+}

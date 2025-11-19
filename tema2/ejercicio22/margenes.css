@@ -1,0 +1,22 @@
+body{
+    background-color: burlywood;
+}
+
+.sect1{
+    margin: 20px;
+    background-color: darkseagreen;
+}
+
+.sect2{
+    margin-top:10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    /* Se podría poner así: margin:10px 20px 30px 40px; */
+    background-color:greenyellow;
+}
+
+.section3 button{
+    margin:auto;    /* Centra el botón horizontalmente dentro de su contenedor. */
+    margin-top: 50px;
+}
