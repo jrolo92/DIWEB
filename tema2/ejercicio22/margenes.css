@@ -3,7 +3,8 @@ body{
 }
 
 .sect1{
-    margin: 20px;
+    /* Margen igual para los 4 lados */
+    margin: 20px;       
     background-color: darkseagreen;
 }
 

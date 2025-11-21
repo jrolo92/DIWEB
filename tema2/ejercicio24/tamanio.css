@@ -1,0 +1,19 @@
+.sec1 h2{
+    height: 150px;
+    width: 200px;
+    background-color:aqua;
+}
+
+.sec2 p{
+    width: 50%;
+    height:150px;
+    background-color:aquamarine;
+}
+
+.sec3 button{
+    width: 300px;
+    min-height: 100px;
+    max-height: 200px;
+    background-color: gray;
+    border-radius: 10px;
+}
