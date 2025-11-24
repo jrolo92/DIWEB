@@ -1,0 +1,29 @@
+
+        body {
+            background-color: #f0f4f8; 
+            padding: 20px;
+            text-align: center;
+        }
+        
+        /* 💡 ¡MODIFICA AQUÍ! 💡 */
+        .contenedor {           
+            border: 2px solid #007bff; 
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin:auto;        /* Va a aparecer centrado */
+            width:90%;          /* Va a ocupar el 90% del ancho de pantalla */
+            max-width: 900px;   /* Tamaño máximo */
+            min-width: 300px;   /* Tamaño mínimo */
+        }
+
+        .caja-imagen {
+            background-color: #ff9900;
+            height:200px;       /* Altura fija */
+
+        }
+
+        p {
+            font-size: 1.1em;
+            text-align: left;
+        }
