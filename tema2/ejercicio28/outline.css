@@ -1,0 +1,22 @@
+/* Solo cambia los contornos pero no los elementos */
+
+.div1 {
+    outline-style: dashed;
+    outline-color:aqua;
+}
+
+.div2 {
+    outline-style:double;
+    outline-width: 5px;
+    outline-color: aquamarine;
+    /* 
+        Se podría poner con el short hand: 
+        outline: 5px double aquamarine;
+     */
+}
+
+.div3 {
+    outline-offset: 10px;
+    outline-style: dotted;
+    outline-color: olivedrab;
+}
