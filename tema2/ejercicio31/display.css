@@ -1,0 +1,23 @@
+body {
+    font-family: 'Montserrat';
+}
+
+div {
+    display: inline;
+}
+
+span {
+    display:none
+}
+
+p {
+    display:block;
+}
+
+button {
+    display:inline-block;
+}
+
+.invisible {
+    visibility:hidden;
+}

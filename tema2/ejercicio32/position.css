@@ -1,0 +1,42 @@
+#padre {
+    margin:auto;
+    position: relative;
+    background-color: aquamarine;
+    width: 80%;
+    height: 80vh;
+    border:1px solid black;
+}
+
+#div1 {
+    position:static;
+    background-color: antiquewhite;
+}
+
+#div2 {
+    position:relative;
+    top:20px;
+    left:30px;
+    background-color: yellowgreen
+}
+
+#div3 {
+    position:absolute;
+    top:10%;
+    left:10%;
+    width: 200px;
+    background-color: orangered;
+
+}
+
+#div4 {
+    position:fixed;
+    top:90px;
+    left:90px;
+    background-color: brown;
+}
+
+#div5 {
+    position:sticky;
+    top:10px;
+    background-color: blueviolet;
+}

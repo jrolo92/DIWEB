@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="display.css">
+</head>
+
+    <div>CSS: Display</div>
+    <span id="miSpan">Línea oculta con display:none</span>
+    <p>
+        La propiedad display en CSS define cómo un elemento se representa en la página y determina su comportamiento dentro del flujo del documento.
+        block → El elemento ocupa todo el ancho y empieza en una nueva línea.
+        inline → Se coloca en la misma línea y solo ocupa el espacio de su contenido.
+        inline-block → Se mantiene en línea pero permite definir ancho y alto.
+        none → El elemento no se muestra y no ocupa espacio.
+    </p>
+    <button id="boton">Pincha aquí</button>
+    <div>
+        <p>La propiedad visibility controla si un elemento es visible o invisible, pero sigue ocupando espacio en el flujo del documento.</p>
+        <p class="visible">visibility: visible; → el elemento se muestra normalmente.</p>
+        <p class="invisible" id="miParrafo">visibility: hidden; → el elemento no se ve, pero su espacio sigue reservado en la página. Es como si fuera transparente.</p>
+    </div>
+    <button id="boton2">Pincha aquí</button>
+    
+    <script>
+        
+        var boton = document.getElementById("boton");
+
+        boton.addEventListener('click', ()=> cambiarEstilo());
+
+        function cambiarEstilo(){
+            var span = document.getElementById("miSpan");
+            if(span.style.display === "none"){
+                span.style.display = "block";
+            } else {
+                    span.style.display = "none";
+            }
+        }
+
+        var boton2 = document.getElementById("boton2");
+
+        boton2.addEventListener('click', ()=> cambiarEstilo2());
+
+        function cambiarEstilo2(){
+            var parrafo = document.getElementById("miParrafo");
+            if(parrafo.style.visibility === "hidden"){
+                parrafo.style.visibility = "visible";
+            } else {
+                parrafo.style.visibility = "hidden";
+            }
+        }
+            
+    </script>
+</body>
+</html>
