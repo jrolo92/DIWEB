@@ -1,18 +1,43 @@
 body {
-      display: flex;
-      justify-content: center;   
-      align-items: center;       
-      height: 100vh;             
-      margin: 0;
-      background-color: #f0f0f0;
+      background-color: #000000;
     }
 
-    .contenedor {
-      display: flex;              
+    .cuadrado1 {
+      width: 200px;
+      height: 200px;
+      background-color: midnightblue;
+      position: absolute;
+      left: 45%;
+      top: 50%;
+      z-index: -1;
     }
 
-    .cuadrado {
-      width: 100px;
-      height: 100px;
+    .cuadrado2 {
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      z-index: 0;
+    }
+
+    .cuadrado3 {
+      width: 200px;
+      height: 200px;
       background-color: steelblue;
+      position: absolute;
+      left: 55%;
+      top: 50%;
+      z-index: 1;
+    }
+
+    .cuadrado4 {
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+      position: absolute;
+      left: 50%;
+      top: 57%;
+      z-index: 2;
     }
