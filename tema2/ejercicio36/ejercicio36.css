@@ -1,0 +1,68 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 1. Centrar un elemento de bloque */
+.block {
+  width: 50%; /* Definir un ancho */
+  margin: 20px auto; /* Centrar horizontalmente */
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+}
+
+/* 2. Centrar texto en un contenedor */
+.text-container {
+  text-align: center; /* Centrar el texto */
+  margin: 20px 0;
+}
+
+/* 3. Centrar una imagen */
+.image-container img {
+  display: block; /* Convertir la imagen en bloque */
+  margin: 20px auto; /* Centrar horizontalmente */
+}
+
+/* 4. Alinear elementos a la izquierda y derecha */
+.aligned {
+  position: relative;
+  height: 50px;
+}
+
+.left {
+  position: absolute;
+  left: 0; /* Alinear a la izquierda */
+  background-color: #2ecc71;
+  padding: 10px;
+  color: white;
+}
+
+.right {
+  position: absolute;
+  right: 0; /* Alinear a la derecha */
+  background-color: #e74c3c;
+  padding: 10px;
+  color: white;
+}
+
+/* 5. Centrar verticalmente */
+.vertical-center {
+  height: 100px; /* Altura del contenedor */
+  line-height: 100px; /* Igualar con la altura */
+  text-align: center;
+  background-color: #9b59b6;
+  color: white;
+}

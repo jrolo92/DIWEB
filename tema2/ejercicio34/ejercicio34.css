@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    font-family: 'Montserrat';
+    color:white;
+    text-align: center;
+}
+
+div {
+        border: 2px solid black;
+    float:left;
+    width:20%;
+    padding: 10px;
+    margin:1%;
+}
+
+.div1 {
+    background-color: midnightblue;
+}
+
+.div2 {
+    background-color: steelblue;
+}
+
+.div3 {
+    background-color: green;
+}
+
+.div4 {
+    background-color: mediumaquamarine;
+}
+
+.pie {
+    clear:both;
+
+}
+
