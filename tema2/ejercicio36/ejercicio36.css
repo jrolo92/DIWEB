@@ -16,8 +16,9 @@ body {
 
 /* 1. Centrar un elemento de bloque */
 .block {
-  width: 50%; /* Definir un ancho */
+  width: 80%; /* Modificar el ancho */
   margin: 20px auto; /* Centrar horizontalmente */
+  text-align:justify;
   padding: 10px;
   background-color: #3498db;
   color: white;
@@ -26,7 +27,7 @@ body {
 
 /* 2. Centrar texto en un contenedor */
 .text-container {
-  text-align: center; /* Centrar el texto */
+  text-align:center; /* Modificar alineación de texto */
   margin: 20px 0;
 }
 
@@ -34,6 +35,7 @@ body {
 .image-container img {
   display: block; /* Convertir la imagen en bloque */
   margin: 20px auto; /* Centrar horizontalmente */
+  max-width: 100%;
 }
 
 /* 4. Alinear elementos a la izquierda y derecha */
@@ -65,4 +67,11 @@ body {
   text-align: center;
   background-color: #9b59b6;
   color: white;
+}
+
+.enlace {
+  height:30px;
+  padding:30px;
+  text-align:center;
+  background-color: mediumturquoise;
 }
