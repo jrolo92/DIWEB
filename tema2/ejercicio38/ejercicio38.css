@@ -1,0 +1,25 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+a:link{
+    color: midnightblue
+}
+a:visited{
+    color: green
+}
+
+a:hover{
+    color:orangered
+}
+
+div{
+    width:15%;
+    height: 100px;
+    margin:auto;
+    line-height: 100px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 10px;
+}

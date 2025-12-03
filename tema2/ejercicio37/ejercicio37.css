@@ -1,0 +1,15 @@
+body{
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.container{
+    width: 500px;
+    margin: auto;
+    height:500px;
+    text-align:center;
+    background-color: blanchedalmond;
+    overflow-y:auto;
+    /* overflow-x: auto;
+    white-space: nowrap; */
+}

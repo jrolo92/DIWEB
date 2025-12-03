@@ -22,7 +22,6 @@ body {
   padding: 10px;
   background-color: #3498db;
   color: white;
-  text-align: center;
 }
 
 /* 2. Centrar texto en un contenedor */
@@ -45,16 +44,14 @@ body {
 }
 
 .left {
-  position: absolute;
-  left: 0; /* Alinear a la izquierda */
+  float:left; /* Alinear a la izquierda */
   background-color: #2ecc71;
   padding: 10px;
   color: white;
 }
 
 .right {
-  position: absolute;
-  right: 0; /* Alinear a la derecha */
+  float:right; /* Alinear a la derecha */
   background-color: #e74c3c;
   padding: 10px;
   color: white;
@@ -70,7 +67,9 @@ body {
 }
 
 .enlace {
+  margin-top:20px;
   height:30px;
+  line-height:30px;
   padding:30px;
   text-align:center;
   background-color: mediumturquoise;

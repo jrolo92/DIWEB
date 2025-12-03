@@ -1,0 +1,18 @@
+/* 1 */
+ul>li:first-child{
+    background-color: beige;
+}
+/* 2 */
+ul>li:last-child{
+    font-weight: bold;
+}
+/* 3 */
+.tareas li:nth-child(3){
+    color:brown
+}
+/* 4 */
+
+/* 5 */
+.contactos li:nth-child(2){
+    border:1px solid black;
+}
