@@ -1,0 +1,41 @@
+body {
+    text-align:center;
+}
+
+.img {
+    display:block;
+    margin:auto;
+    width: 90%;
+    border-radius: 10%;
+}
+
+@media screen and (min-width:768px){
+    ul li {
+        display:inline-block;
+        margin: 10px 10px 20px;
+        float: right;
+    }
+
+    h2 {
+        text-align: right;
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width:768px){
+    ul li {
+        margin-right: 30px;
+        list-style-type: none;
+    }
+}
+
+@media screen and (orientation:portrait){
+    ul li {
+        background-color:wheat;
+    }
+}
+@media screen and (orientation:landscape){
+    ul li {
+        background-color: beige;
+    }
+}
