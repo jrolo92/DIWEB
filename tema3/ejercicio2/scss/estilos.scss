@@ -1,0 +1,50 @@
+.menu {
+    background-color: #333;
+    padding: {
+        top: 10px;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline;
+        margin-right: 15px;
+    }
+
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: #2ecc71;
+    }
+}
+
+.content {
+    padding: 20px;
+
+    margin: {
+        top: 20px;
+        bottom: 20px;
+    }
+
+    h2 {
+        color: #3498db;
+        font: {
+            size:24px;
+            weight:bold;
+        }
+    }
+
+    p {
+        color: #555;
+    }
+}
