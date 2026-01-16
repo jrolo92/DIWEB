@@ -1,0 +1,18 @@
+// variables:
+// colores-primario, colores-secundario, colores-alerta
+$colores: (
+  primario: #3498db,
+  secundario: #2ecc71,
+  alerta: #e74c3c
+);
+
+$tipos-fuente: ("Arial", "Verdana", "Helvetica");
+
+// Funciones:
+.titulo{
+    content:to-uppercase(unquote("Mi titulo"));
+}
+
+.caja{
+    
+}

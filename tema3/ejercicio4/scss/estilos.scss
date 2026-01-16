@@ -1,0 +1,24 @@
+// Variables:
+$color-fondo: #3498db;
+$color-texto: white;
+$padding: 10px;
+$border-radius: 5px;
+
+@mixin boton ($color-fondo: $color-fondo, $color-texto: $color-texto, $padding: $padding, $border-radius: $border-radius) {
+    background-color: $color-fondo;
+    color: $color-texto;
+    padding: $padding;
+    border-radius: $border-radius;
+}
+
+.boton-primario {
+    @include boton();
+}
+
+.boton-secundario {
+    @include boton($color-fondo: #2ecc71);
+}
+
+.boton-alerta {
+    @include boton($color-fondo: #e74c3c, $padding: 15px);
+}

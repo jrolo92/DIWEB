@@ -1,0 +1,22 @@
+.boton-primario {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px
+}
+
+.boton-secundario {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px
+}
+
+.boton-alerta {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px
+}
+
+/* Repite mas código que extend */
