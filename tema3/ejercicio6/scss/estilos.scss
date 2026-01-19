@@ -1,5 +1,5 @@
 // variables:
-// colores-primario, colores-secundario, colores-alerta
+
 $colores: (
   primario: #3498db,
   secundario: #2ecc71,
@@ -10,9 +10,60 @@ $tipos-fuente: ("Arial", "Verdana", "Helvetica");
 
 // Funciones:
 .titulo{
-    content:to-uppercase(unquote("Mi titulo"));
+  content: to-uppercase(unquote("Mi titulo"));
 }
 
 .caja{
-    
+  $ancho: percentage(480/1200);
+  $ancho-ceiling: ceil($ancho);
+  // Aplicamos el ancho redondeado a este contenedor
+  width: $ancho-ceiling;
 }
+
+.fuentes{
+  font-family: nth($tipos-fuente, 2);
+  // Para mostrar en consola se usa @debug
+  @debug length($tipos-fuente);
+}
+
+.boton-primario{
+  background-color: map-get($colores, primario);
+  @debug map-has-key($colores, "alerta");
+}
+
+.boton1{
+  background-color: midnightblue;
+  color: white;
+}
+
+.boton2{
+  background-color: purple;
+  color:white;
+}
+
+#{selector-append(".boton1", ":hover")}{
+  background-color: purple;
+}
+
+.info{
+  // Mostrar en consola el tipo de las vv colores y tipos de fuente.
+  @debug type-of($colores);
+  @debug type-of($tipos-fuente);
+}
+
+.alerta{
+  // Le doy de fondo un color mas aclarado y menos opaco
+  background-color: lighten(map-get($colores, alerta), 75%);
+  opacity: 0.6;
+}
+
+/*
+  1. Usar map-get() tiene la ventaja de que te permite tener varios valores
+  en una sola variable y cuando necesites uno de ellos se puede obtener usando
+  esta función recorriendo la variable en lugar de tener muchas.
+
+  2. selector-append() permite crear selectores dinámicos.
+
+  3. La función type-of nos dice el tipo de una variable y sabiendo esto evitamos
+  aplicar una función correcta a dicha variable en función del tipo.
+*/

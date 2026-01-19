@@ -1,0 +1,42 @@
+// Variables
+$base: 10px;
+$ancho-total: 1200px;
+$ancho-caja: 360px;
+$modo-compacto: true;
+
+.caja{
+    padding: 2*$base;
+    margin-bottom: $base + 5px;
+    width: percentage($ancho-caja / $ancho-total);
+    height: 6* $base;
+}
+
+.texto{
+    $size: 14px;
+    font-size: $size;
+    @if($size >= 16px){
+        font-weight: bold;
+    } @else{
+        font-weight: normal;
+    }
+}
+
+body{
+    @if ($modo-compacto == true and $base < 15px){
+        background-color: #f4f4f4;
+        color: #333;
+    }
+}
+
+$margen: "margen-top";
+.#{$margen} {
+    margin-top:$base * 2;
+}
+
+/*
+    1. Las ventajas de que SASS haga los cálculos antes de que lleguen al navegador son:
+        - El navegador recibe el CSS mas simple y ligero
+        - Aumenta el rendimiento y la compatibilidad con navegadores.
+        - Proporciona un código mas limpio y fácil de mantener.
+        - Evita que haya errores en tiempo de ejecución.
+*/

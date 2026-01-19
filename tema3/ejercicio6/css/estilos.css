@@ -1,0 +1,42 @@
+@charset "UTF-8";
+.titulo {
+  content: to-uppercase(Mi titulo);
+}
+
+.caja {
+  width: 40%;
+}
+
+.fuentes {
+  font-family: "Verdana";
+}
+
+.boton-primario {
+  background-color: #3498db;
+}
+
+.boton1 {
+  background-color: midnightblue;
+  color: white;
+}
+
+.boton2 {
+  background-color: purple;
+  color: white;
+}
+
+.alerta {
+  background-color: white;
+  opacity: 0.6;
+}
+
+/*
+  1. Usar map-get() tiene la ventaja de que te permite tener varios valores
+  en una sola variable y cuando necesites uno de ellos se puede obtener usando
+  esta función recorriendo la variable en lugar de tener muchas.
+
+  2. selector-append() permite crear selectores dinámicos.
+
+  3. La función type-of nos dice el tipo de una variable y sabiendo esto evitamos
+  aplicar una función correcta a dicha variable en función del tipo.
+*/
