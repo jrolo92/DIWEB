@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #191970;
+  color: #d3d3d3;
+  width: 50%;
+  margin: auto;
+}
+.card .card-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-price {
+  font-style: italic;
+  font-size: 64px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+.card .card-btn {
+  background-color: green;
+  color: #d3d3d3;
+  border: 1px solid black;
+  border-radius: 20%;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-btn:hover {
+  background-color: yellow;
+}

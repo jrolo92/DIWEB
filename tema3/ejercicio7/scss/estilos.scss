@@ -3,6 +3,7 @@ $base: 10px;
 $ancho-total: 1200px;
 $ancho-caja: 360px;
 $modo-compacto: true;
+$size: 14px;
 
 .caja{
     padding: 2*$base;
@@ -12,7 +13,6 @@ $modo-compacto: true;
 }
 
 .texto{
-    $size: 14px;
     font-size: $size;
     @if($size >= 16px){
         font-weight: bold;

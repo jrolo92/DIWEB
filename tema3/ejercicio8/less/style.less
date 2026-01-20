@@ -1,0 +1,56 @@
+// Variables
+@primary-color: #191970;
+@secondary-color: yellow;
+@text-color: #d3d3d3;
+@spacing: 20px;
+@base-font: 16px;
+
+// Mixin
+.flex-center(@display: flex, @justify: center, @align: center){
+    display: @display;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.card{
+    .flex-center();
+    background-color: @primary-color;
+    color: @text-color;
+    width:50%;
+    margin:auto;
+
+    .card-title{
+        font-weight: bold;
+        // background-color: @primary-color;
+        // color: @text-color;
+        font-size: @base-font;
+
+        margin: auto;
+        .flex-center();
+    }
+
+    .card-price{
+        font-style: italic;
+        // background-color: @primary-color;
+        // color: @text-color;
+        font-size: 4 * @base-font;
+        width: 50%;
+        margin: auto;
+        .flex-center();
+        font-size: 2 * @base-font;
+    }
+
+    .card-btn{
+        background-color: green;
+        color: @text-color;
+        border: 1px solid black;
+        border-radius: 20%;
+        padding: 20px;
+        margin:auto;
+        .flex-center();
+        &:hover{
+            background-color: @secondary-color;
+        }
+    }
+
+}
