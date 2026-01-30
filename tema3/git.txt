@@ -1,0 +1,1 @@
+git checkout -b [nombre_rama] --> Cambia de rama o la crea si no existe con el nombre_rama

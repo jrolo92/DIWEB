@@ -1,0 +1,42 @@
+.caja {
+    width: 150px;
+    height: 100px;
+    border: 1px solid black;
+    
+    display: inline-block;
+    /* Display:
+        - inline: Se coloca en línea
+        - inline-block: Se coloca en línea y mantiene el ancho y alto
+        - block: Se mantiene en columna
+    */
+
+    margin:20px;
+    padding: 10px;
+
+    text-align: center;
+    /* altura de la línea = altura del contenedor*/
+    line-height: 100px;
+
+}
+
+.contenedor {
+    position:relative;
+}
+
+.especial {
+    position:absolute;
+    top: 20px;
+    right:20px;
+
+    color:rgb(6, 250, 6);
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color:midnightblue;
+
+}
+
+.cabecera nav a:hover {
+    color:aqua;
+}
