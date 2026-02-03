@@ -1,0 +1,16 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+}
+.caja{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-color: #f1f1f1;
+}

@@ -1,0 +1,16 @@
+.cards {
+    display: flex;
+    /* flex-direction: row; Este valor es por defecto */
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+.card {
+    width: 20%;
+    height: 50px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 8px;
+
+}

@@ -1,0 +1,7 @@
+.footer {
+    display:flex;
+    /* flex-direction: row; Es el valor por defecto */
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightcoral;
+}

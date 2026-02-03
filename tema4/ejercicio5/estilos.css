@@ -1,0 +1,60 @@
+/* 1. Header */
+.header {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+.menu {
+    display:flex;
+    gap: 20px;
+}
+
+.menu a {
+    color:white;
+    text-decoration: none;
+}
+
+/* 2. Layout principal*/
+.main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul {
+    display:flex;
+}
+.sidebar ul li {
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    list-style: none;
+}
+
+/* 3. Cards */
+.contenido {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display:flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    text-align: center;
+}
+
+
