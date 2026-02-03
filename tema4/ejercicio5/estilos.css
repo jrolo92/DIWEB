@@ -7,6 +7,7 @@
     padding: 20px;
     background-color: black;
     color: white;
+    
 }
 .menu {
     display:flex;
@@ -23,20 +24,21 @@
     display: flex;
     gap: 20px;
     padding: 20px;
+    background-color: aliceblue;
+
 }
 
 .sidebar {
     display: flex;
     flex-direction: column;
+    background-color:azure;
+    padding: 20px;
+    width: 150px;
 }
 
 .sidebar ul {
     display:flex;
-}
-.sidebar ul li {
-    display:flex;
-    justify-content: space-between;
-    padding: 20px;
+    flex-direction: column;
     gap: 20px;
     list-style: none;
 }
@@ -45,16 +47,29 @@
 .contenido {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    background-color: azure;
+    padding: 20px;
 }
 
 .cards {
     display:flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
     flex: 1;
+    min-width: 150px;
+    padding: 20px;
     text-align: center;
 }
 
+/* 4. Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
 
