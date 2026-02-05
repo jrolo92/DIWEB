@@ -1,0 +1,49 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas:
+        "header header header"
+        "menu contenido contenido"
+        "menu extra extra"
+        "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    padding:20px;
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+
+.menu {
+    grid-area: menu;
+    padding:20px;
+    text-align: center;
+    background-color: lightblue;
+    place-items:center;
+}
+
+.contenido {
+    grid-area: contenido;
+    padding:20px;
+    text-align: center;
+    background-color: lightcoral;
+}
+
+.extra {
+    grid-area: extra;
+    padding:20px;
+    text-align: center;
+    background-color: lightgreen;
+}
+
+.footer {
+    grid-area: footer;
+    padding:20px;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+}
+
+

@@ -1,0 +1,11 @@
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    padding: 20px;
+    gap: 10px;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+}
