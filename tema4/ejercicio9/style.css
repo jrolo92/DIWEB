@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    height: 100vh;
+
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color:white;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header ul li a {
+    color:white;
+    text-decoration: none;
+}
