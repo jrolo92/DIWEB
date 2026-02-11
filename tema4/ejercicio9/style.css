@@ -1,10 +1,13 @@
+/* Layout general con grid */
 .container {
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto 1fr auto;
     height: 100vh;
+    gap: 10px;
 
 }
 
+/* Header usando flexbox */
 header {
     display:flex;
     justify-content:space-between;
@@ -12,15 +15,39 @@ header {
     padding: 20px;
     background-color: black;
     color:white;
+
+    ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+
+        li a {
+            color:white;
+            text-decoration: none;
+        }
+    }
 }
 
-header ul {
-    display: flex;
+
+/* Main usando flexbox */
+main {
+    display:flex;
+    justify-content: center;
+    align-items:center;
     gap: 20px;
-    list-style: none;
+    background-color:beige;
+
+    div {
+        background-color: lightyellow;
+        padding: 30px;
+        border-radius: 8px;
+    }
 }
 
-header ul li a {
-    color:white;
-    text-decoration: none;
+/* Footer usando flexbox */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: lightblue;
 }
