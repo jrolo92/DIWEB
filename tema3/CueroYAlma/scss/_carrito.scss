@@ -1,0 +1,53 @@
+.carrito {
+    // Enlace seguir comprando
+    .enlaceCata {
+        max-width: 73%;
+        margin: 20px auto; 
+        
+        a { 
+            display: inline-block;
+            color: $color-boton;
+            text-decoration: none;
+            font-size: $H3;
+            padding-top: 10px;
+
+            &:hover {
+                text-decoration: underline;
+                color: $color-principal;
+            }
+        }
+    }
+
+    main {
+        max-width: 70%;
+        min-width: 300px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: $color-fondo;
+        border: 1px solid $color-secundario;
+        border-radius: 8px;
+        font-family: $tipografia;
+
+        // Barra de scroll vertical
+        height: 800px;
+        overflow-y:auto;
+
+        h2 {
+            font-size: $H1;
+            color: $color-principal;
+            text-decoration: underline;
+            margin: {
+                left: 20px;
+                bottom: 10px;
+            }
+            
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+    }
+}

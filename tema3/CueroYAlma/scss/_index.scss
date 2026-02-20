@@ -1,0 +1,59 @@
+.index {
+
+    main {
+        background-color: $color-fondo;
+        font-family: $tipografia;
+
+        #imgPrincipal {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .caja-texto {
+            font-size: $H1;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        #carrusel {
+            overflow: hidden;
+            width: 100%;
+            .track-carrusel {
+                display: flex;
+                width: calc($anchoImagen * cantidadImagenes);
+                animation: desplazar 20s linear infinite;
+
+                &:hover {
+                    animation-play-state: paused;
+                }
+            }
+
+            img {
+                width: $anchoImagen;
+                height: auto;
+                flex-shrink: 0; // Evita que las imágenes se aplasten
+                margin: $margen;
+            }
+
+            
+        }
+
+        @keyframes desplazar {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-1 * (#{$espacioTotalImagen} * #{$cantidadImagenes})));
+            }
+        }
+
+        
+    }
+    
+
+
+
+}
+

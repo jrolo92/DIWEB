@@ -1,0 +1,42 @@
+// Tarjeta de producto
+.tarjeta-carrito{
+    article {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;     
+        }
+
+        // Imagen
+        div:first-child {
+
+            img {
+                width: 50%;
+                height: 50%;
+                border-radius: 5px;
+                border: 1px solid $color-principal;
+            }
+        }
+
+        // Info y Formulario
+        div:nth-child(2) {
+            width: 100%;
+
+            .nombre-producto {
+                font-size: $H3;
+                color: $color-principal;
+            }
+
+            p {
+                // Precio
+                font-size: $H2;
+                font-weight: bold;
+                color: $color-boton;
+            }
+        }
+    }
+}

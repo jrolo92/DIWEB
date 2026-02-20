@@ -1,0 +1,46 @@
+header {
+  font-family: $tipografia;
+  background-color: $color-principal;
+  color: $color-auxiliar;
+  padding: 10px 20px;
+  height: 90px;
+
+  display: flex;
+  justify-content: space-between; // nav a la izquierda, marca a la derecha
+  align-items: center;
+
+  .marca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    h1 {
+      font-size: $H1;
+      color: $color-auxiliar;
+    }
+
+    img {
+      display: block;
+      width: 70px;
+      height: 70px;
+      border-radius: 20%;
+    }
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+    li a {
+      color: $color-auxiliar;
+      text-decoration: none;
+      font-size: $H3;
+      font-weight: 500 px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@
 
 ### Autor: Javier Rodríguez López 
 
-He escogido la web de adidas
+He escogido la [web de adidas](https://www.adidas.es/)
 
 ### Diseño y Composición
 * **Imagen principal:** Nada mas entrar en la web se puede ver una imágen de tipo "hero section" que ocupa toda la pantalla con los productos mas vendidos.
