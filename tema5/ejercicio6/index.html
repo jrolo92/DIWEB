@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero">
+        <h1>Traileros</h1>
+    </header>
+    <main>
+        <div class="galeria">
+            <img src="./images/sendero-montaña-1.jpg" alt="Imagen de sendero en la montaña 1"> 
+            <img src="./images/sendero-montaña-2.jpg" alt="Imagen de sendero en la montaña 2"> 
+            <img src="./images/sendero-montaña-3.jpg" alt="Imagen de sendero en la montaña 3">
+        </div>
+
+        <div class="contenido">
+            <picture> 
+                <source srcset="./images/sendero-montaña-lg.jpg" media="(min-width: 1024px)"> 
+                <source srcset="./images/sendero-montaña-md.jpg" media="(min-width: 768px)"> 
+                <img src="./images/sendero-montaña-sm.jpg" alt="Imagen adaptativa"> 
+            </picture>
+        </div>
+        <footer>
+            <button class="cta">Inscripción</button>
+        </footer>
+    </main>
+</body>
+
+</html>

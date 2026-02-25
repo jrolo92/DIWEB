@@ -1,0 +1,68 @@
+/* CABECERA */
+.hero {
+    background-image: url('./images/sendero-montaña.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+
+}
+
+    @media (min-width: 768px) {
+        .hero {
+            height: 600px;
+        }
+    }
+
+/* GALERÍA */
+.galeria {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.galeria img {
+    width: 30%;
+    border-radius: 10px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+/* CONTENIDO */
+.contenido {
+    padding: 20px;
+    text-align: center;
+}
+
+.contenido img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.cta {
+    background-image: url('./images/carrera-boton.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 40px;
+    padding: 10px 20px;
+    background-size: cover;
+    color:white;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+}

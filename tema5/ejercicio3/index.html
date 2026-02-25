@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Comparativa Raster vs Vectorial</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .box {
+            text-align: center;
+        }
+
+        /* Ampliación al 300% */
+        .zoom {
+            width: 300px;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+
+        code {
+            background: #eee;
+            padding: 2px 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JPG (Raster) vs SVG (Vector) al 300%</h1>
+
+    <div class="container">
+        <div class="box">
+            <h3>JPG (Mapa de Bits)</h3>
+            <img src="https://picsum.photos/100" alt="Miniatura JPG" width="100">
+            <p>Original (100px)</p>
+            <img src="https://picsum.photos/100" alt="JPG Ampliado" class="zoom">
+            <p>Ampliado al 300%</p>
+        </div>
+
+        <div class="box">
+            <h3>SVG (Vectorial)</h3>
+            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+            </svg>
+            <p>Original (100px)</p>
+            <svg width="300" height="300" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="zoom">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+            </svg>
+            <p>Ampliado al 300%</p>
+        </div>
+    </div>
+
+    <a href="tabla">Tabla comparativa</a>
+
+</body>
+
+</html>
