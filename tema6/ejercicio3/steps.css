@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #191970;
+}
+
+.circulo {
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+     /* Círculo  */
+    border-radius: 50%; 
+    cursor: pointer;
+
+    /* Transición con STEPS */
+    transition: background-color 2s steps(4);
+}
+
+.circulo:hover {
+    background-color: #000000; 
+}
