@@ -1,0 +1,21 @@
+.form-carrito {
+    display: flex;  
+    font-size: $H3;
+    font-family: $tipografia;
+    gap: 20px;
+
+    @media (max-width: 768px) { 
+        flex-direction: column;
+    }
+
+    label {
+        color: $color-principal; 
+    }
+
+    input {
+        border: 1px solid $color-secundario;
+        border-radius: 8px;
+        padding: 5px;
+        font-family: $tipografia;
+    }
+}

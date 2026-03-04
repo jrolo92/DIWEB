@@ -15,19 +15,19 @@ h1 {
 @keyframes moverLetra {
     0% {
         transform: translateX(0) scale(1);
-        color: black;
+        color: #00FFFF;
     }
     33% {
         transform: translateX(30vw) scale(2.5);
-        color: #3498db; 
+        color: #FF00FF; 
     }
     66% {
         transform: translateX(60vw) scale(4.5);
-        color: #9b59b6; 
+        color: #32CD32; 
     }
     100% {
         transform: translateX(90vw) scale(7);
-        color: #e74c3c; 
+        color: #FFFF00; 
     }
 }
 
@@ -38,4 +38,5 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: midnightblue;
 }

@@ -1,0 +1,78 @@
+footer {
+  font-family: $tipografia;
+  background-color: $color-auxiliar;
+  color: $color-principal;
+  padding: 10px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+
+  .footer-top {
+    border-top: 1px solid $color-secundario;
+    padding-top: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center; // centra las columnas dentro del footer
+    gap: 40px; // separación entre columnas
+
+    > div {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; // centra el contenido dentro de cada columna
+      gap: 8px;
+
+      h4 {
+        font-size: $parrafo;
+        margin-bottom: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing:1px;
+      }
+
+      p,li,a {
+        margin: 0;
+        color: $color-principal;
+        font-size: $parrafo;
+        line-height: 1.6;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap:8px;
+
+        li a {
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+              opacity: 0.7;
+            }
+          }
+      }
+    }
+  }
+
+  .footer-bot {
+    text-align: center;
+    font-size: $parrafo;
+  }
+}
+@media (max-width: 600px) {
+  footer .footer-top {
+    // Cambiamos a una sola columna en móviles
+    grid-template-columns: 1fr;
+    gap: 40px;
+    
+    > div {
+      align-items: center;
+    }
+  }
+}

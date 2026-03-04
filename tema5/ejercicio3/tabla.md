@@ -1,3 +1,4 @@
+## Diferencias entre imágenes: Raster vs Vectorial
 | Característica | Mapa de Bits (Raster) | Vectorial |
 | :--- | :--- | :--- |
 | **Definición** | Formado por una rejilla de puntos individuales (píxeles). | Formado por fórmulas matemáticas (puntos, líneas y curvas). |

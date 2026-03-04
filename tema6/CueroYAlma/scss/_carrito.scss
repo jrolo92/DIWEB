@@ -1,0 +1,58 @@
+.carrito {
+
+    // Usamos el mixin que creamos
+    @include transicion (0.8s);
+    
+    // Enlace seguir comprando
+    .enlaceCata {
+        max-width: 73%;
+        margin: 10px auto;
+        display:flex;
+        
+        a { 
+            color: $color-boton;
+            text-decoration: none;
+            font-size: $H3;
+            padding-top: 10px;
+
+            &:hover {
+                text-decoration: underline;
+                color: $color-principal;
+            }
+        }
+    }
+
+    main {
+        display:grid;
+        grid-template-columns: 1fr;
+
+        max-width: 70%;
+        min-width: 300px;
+        margin: 1px auto;
+        padding: 20px;
+        background-color: $color-fondo;
+        border: 1px solid $color-secundario;
+        border-radius: 8px;
+        font-family: $tipografia;
+
+        // Barra de scroll vertical
+        height: 500px;
+        overflow-y:auto;
+
+        h2 {
+            margin-top: 0;
+            font-size: $H2;
+            color: $color-principal;
+            text-decoration: underline;
+            margin-bottom: 10px;
+            padding: 0 20px;        
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+    
+    }
+}

@@ -1,0 +1,73 @@
+body{
+    // Usamos el mixin que creamos
+    @include transicion (0.8s);
+}
+
+.index {
+
+
+    main {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+
+        background-color: $color-fondo;
+        font-family: $tipografia;
+
+        #videoPrincipal {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .caja-texto {
+            font-size: $H1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;     
+            padding: 2rem;
+        }
+
+        #carrusel {
+            overflow: hidden;
+            width: 100%;
+            .track-carrusel {
+                display: flex;
+                width: calc($anchoImagen * $cantidadImagenes);
+                animation: desplazar 20s linear infinite;
+
+                &:hover {
+                    animation-play-state: paused;
+                }
+            }
+
+            img {
+                width: $anchoImagen;
+                height: auto;
+                flex-shrink: 0; // Evita que las imágenes se aplasten
+                margin: $margen;
+            }
+
+            
+        }
+
+        @keyframes desplazar {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-1 * (#{$espacioTotalImagen} * #{$cantidadImagenes})));
+            }
+        }
+
+        
+    }
+    
+
+
+
+}
+

@@ -1,0 +1,45 @@
+body {
+  background-color: #E0E1DD;
+  font-family: "Montserrat";
+}
+
+#imgPrincipal {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  background-color: #000000;
+  align-items: center;
+}
+header h1, header a {
+  color: #FFFFFF;
+}
+header a:hover {
+  color: blue;
+}
+header h1 {
+  margin-left: 25px;
+}
+header nav {
+  margin-left: auto;
+  margin-right: 50px;
+}
+header img {
+  height: auto;
+}
+
+.caja-texto {
+  font-size: 36px;
+  margin-left: 80px;
+  margin-right: 80px;
+  text-align: center;
+}
+
+#carrusel div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

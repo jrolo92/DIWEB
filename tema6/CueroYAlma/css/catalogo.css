@@ -1,0 +1,53 @@
+body {
+  background-color: #E0E1DD;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+section > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: #C2C5AA;
+  border-radius: 8px;
+}
+section > div img {
+  flex: 0 0 300px;
+  width: 300px;
+  height: auto;
+  border: 3px solid #000000;
+  border-radius: 4px;
+}
+section > div p {
+  flex: 1;
+  text-align: left;
+  font-family: "Montserrat";
+  font-size: 36px;
+  line-height: 1.6;
+  color: #000000;
+}
+section > div form {
+  flex: 0 0 auto;
+}
+section > div button {
+  background-color: #414833;
+  color: #FFFFFF;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+section > div button:hover {
+  background-color: rgb(38.0487804878, 42.1463414634, 29.8536585366);
+}/*# sourceMappingURL=catalogo.css.map */
