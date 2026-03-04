@@ -1,0 +1,41 @@
+h1 {
+    /* Es fundamental que sea inline-block para que la animación 
+       de transformación (escala y movimiento) funcione */
+    display: inline-block;
+    margin: 0;
+    
+    /* Sintaxis: nombre | duración | curva | delay | iteraciones | dirección | modo final
+       - 4 iteraciones: Ida + Vuelta (1 vez) + Ida + Vuelta (2 veces) = 4 movimientos
+       - alternate: para que regrese de derecha a izquierda suavemente
+       - forwards: para que se quede en el último estado
+    */
+    animation: moverLetra 5s linear 1s 4 alternate forwards;
+}
+
+@keyframes moverLetra {
+    0% {
+        transform: translateX(0) scale(1);
+        color: black;
+    }
+    33% {
+        transform: translateX(30vw) scale(2.5);
+        color: #3498db; 
+    }
+    66% {
+        transform: translateX(60vw) scale(4.5);
+        color: #9b59b6; 
+    }
+    100% {
+        transform: translateX(90vw) scale(7);
+        color: #e74c3c; 
+    }
+}
+
+/* Evitamos el scroll horizontal mientras la letra crece y se mueve */
+body {
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
